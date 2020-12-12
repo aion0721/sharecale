@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Calendar from 'react-calendar'
 import './Top.css'
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 
 function App() {
   const [ item, setItem ] = useState({20201211:'holiday'});
@@ -20,6 +22,7 @@ function App() {
   const [ value, onChange ] = useState(new Date());
   return (
     <div>
+      <Container>
       <Calendar 
       tileClassName={({date}) => item[getFormatDate(date)] === 'holiday' ? 'holiday' : null}
       //tileContent={({ activeStartDate, date, view }) => view === 'month' && date.getDay() === 0 ? <p>It's Sunday!</p> : null}
@@ -27,6 +30,10 @@ function App() {
       onChange={showParams}
       value={value}/>
       <button onClick={event => (console.log(item['20201211']))}>a</button>
+    <Button variant="contained" color="primary">
+      Test
+    </Button>
+    </Container>
     </div>
   );
 }
