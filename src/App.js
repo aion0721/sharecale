@@ -15,7 +15,7 @@ function App() {
         holiday:true,
       }
     })
-    console.log(item)
+    console.log(e)
   }
 
   function changeTypeValue(e){
