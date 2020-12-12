@@ -98,7 +98,7 @@ function App() {
       //tileContent={({ activeStartDate, date, view }) => view === 'month' && date.getDay() === 0 ? <p>It's Sunday!</p> : null}
       tileClassName={({date}) =>item[getFormatDate(date)] && item[getFormatDate(date)].holiday ? 'holiday' : null}
       //tileContent={({date}) =><p>{item[getFormatDate(date)] && item[getFormatDate(date)].txt ? item[getFormatDate(date)].txt : null}</p>}
-      tileContent={({date}) =><p><img src={`${process.env.PUBLIC_URL}/` + showTypeValue(date) + `.png`}/>{showContent(date)}</p>}
+      tileContent={({date}) =><p><img height="100" width="100" src={`${process.env.PUBLIC_URL}/` + showTypeValue(date) + `.png`}/>{showContent(date)}</p>}
       onChange={changeTypeValue}
       value={value}/>
       <button onClick={event => (console.log(item['20201211']))}>a</button>
