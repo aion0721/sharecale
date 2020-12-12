@@ -3,11 +3,13 @@ import Calendar from 'react-calendar'
 import './Top.css'
 
 function App() {
-  const [ item, setItem ] = useState({20201211:'holiday'});
+  const [ item, setItem ] = useState({20201211:{holiday:true,txt:'aiueo'}});
   function showParams(e){
     const day = getFormatDate(e)
     setItem({
-      ...item,[day]:'holiday'
+      ...item,[day]:{
+        holiday:true,
+      }
     })
     console.log(item)
   }
@@ -21,12 +23,13 @@ function App() {
   return (
     <div>
       <Calendar 
-      tileClassName={({date}) => item[getFormatDate(date)] === 'holiday' ? 'holiday' : null}
+      //tileClassName={({date}) => item[getFormatDate(date)] === true ? 'holiday' : null}
       //tileContent={({ activeStartDate, date, view }) => view === 'month' && date.getDay() === 0 ? <p>It's Sunday!</p> : null}
-      tileContent={({date}) =><p>{getFormatDate(date)}</p>}
+      tileClassName={({date}) =>item[getFormatDate(date)] && item[getFormatDate(date)].holiday ? 'holiday' : null}
+      tileContent={({date}) =><p>{item[getFormatDate(date)] && item[getFormatDate(date)].txt ? item[getFormatDate(date)].txt : null}</p>}
       onChange={showParams}
       value={value}/>
-      <button onClick={event => (console.log(item['20201211']))}>a</button>
+      <button onClick={event => (console.log(item['20201211'].holiday))}>a</button>
     </div>
   );
 }
