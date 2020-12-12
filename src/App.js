@@ -11,7 +11,7 @@ function App() {
         holiday:true,
       }
     })
-    console.log(item)
+    console.log(e)
   }
    // state の日付と同じ表記に変換
    function getFormatDate(date) {
