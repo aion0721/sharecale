@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sharecale/static/css/main.df6a00ef.chunk.css",
+    "main.js": "/sharecale/static/js/main.a5d44f54.chunk.js",
+    "main.js.map": "/sharecale/static/js/main.a5d44f54.chunk.js.map",
+    "runtime-main.js": "/sharecale/static/js/runtime-main.55aa1c03.js",
+    "runtime-main.js.map": "/sharecale/static/js/runtime-main.55aa1c03.js.map",
+    "static/js/2.b9563c80.chunk.js": "/sharecale/static/js/2.b9563c80.chunk.js",
+    "static/js/2.b9563c80.chunk.js.map": "/sharecale/static/js/2.b9563c80.chunk.js.map",
+    "static/js/3.7b30d67a.chunk.js": "/sharecale/static/js/3.7b30d67a.chunk.js",
+    "static/js/3.7b30d67a.chunk.js.map": "/sharecale/static/js/3.7b30d67a.chunk.js.map",
+    "index.html": "/sharecale/index.html",
+    "static/css/main.df6a00ef.chunk.css.map": "/sharecale/static/css/main.df6a00ef.chunk.css.map",
+    "static/js/2.b9563c80.chunk.js.LICENSE.txt": "/sharecale/static/js/2.b9563c80.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55aa1c03.js",
+    "static/js/2.b9563c80.chunk.js",
+    "static/css/main.df6a00ef.chunk.css",
+    "static/js/main.a5d44f54.chunk.js"
+  ]
+}
